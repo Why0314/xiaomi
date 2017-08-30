@@ -12,9 +12,30 @@
 		0%{opacity:0}
 		100%{opacity:1}
 	}
+	.goods 
 	@-webkit-keyframes out{
 		0%{opacity:1}
 		100%{opacity:0}
+	}
+	@-webkit-keyframes leftOut{
+		0%{left: 0px;}
+		100{left: -1226px;}
+	}
+	
+	@-webkit-keyframes leftIn{
+		0%{left: -1226px;}
+		100{left: 0px;}
+	}
+	@-webkit-keyframes rightOut{
+		0%{left: 0px;}
+		100{left: 1226px;}
+	}
+	@-webkit-keyframes rightIn{
+		0%{left: 1226px;}
+		100{left: 0px;}
+	}
+	li{
+		list-style:none;
 	}
 	.sep{
 		margin: 0.05em;	
@@ -173,7 +194,7 @@
 	.home{
 		height: 645px;
 		width: 1126px;
-		border:1px solid #000000;
+		
 		margin:0 auto;
 		position: relative;
 	}
@@ -272,11 +293,9 @@
 		top: 20px;
 		
 	}
-	.home .homeT .homeT2 .item li{
-		padding: 0px 0px 0px 0px;
+	.home .homeT .homeT2 .item li{		
 		width: 234px;
-		height: 42px;	
-		list-style:none;
+		height: 42px;			
 		color: #FFFFFF;
 		cursor:pointer;
 		font-size: 14px;
@@ -396,7 +415,7 @@
 		position: relative;
 		color: #000000;
 		background: #FFFFFF;
-		border: 1px #FF9933;
+		
 	}
 
 	.home .homeT .homeT2 .item li .li-item  li:hover{
@@ -440,16 +459,191 @@
 	.home .homeC{
 		width: 1126px;
 		height: 170px;
-		border: 1px solid black;
+		
 		position: absolute;
 		bottom: 0px;
 	}
 	.home .homeC .homeC1{
 		width: 234px;
-		color: #333333;
+		height: 170px;
+		color: #c4c4c4;
 		float: left;
+		
+		background:#665e57;
+		
+	}
+	
+	.home .homeC .homeC1 .hc li{
+	    width: 66px;
+	    height: 82px;
+	    padding: 0 3px;    
+	    cursor:pointer;
+		font-size: 14px;
+		position: relative;	
+		display: inline-block;
+		font-size:12px;
+		text-align: center;
+		margin: 0px 0px;
+		
+	}
+	.home .homeC .homeC1 .hc li:hover{
+		color: #FFFFFF;
+	}
+	.home .homeC .homeC1 .hc li img{
+		position: relative;	
+		top: 12px;
+		width: 30;
+		height: 30px;
+	}
+	.home .homeC .homeC1 .hc li p{
+		position: relative;	
+		top: 12px;
+	}
+	.home .homeC .homeC2{
+		widows: 978px;
+		height: 170px;
+		position: absolute;	
+		right: 0px;
+	}
+	.home .homeC .homeC2 .c2 li{
+		margin: 0px 1px;
+		cursor:pointer;
+		display: inline-block;
+		position: relative;	
+		
+	}
+	.home .homeC .homeC2 .c2 li:hover{
+		 box-shadow:0px 0px 2px 0px;	
+	}
+	.home .homeC .homeC2 .c2 li img{
+		width: 290px;
+		height: 170px;
+	}
+	.goods{
+		width: 1126px;
+		height: 438px;		
+		display: block;
+		position: relative;
+		top: 23px;
+		margin:0 auto;
+		overflow:hidden;
+		
+	} 
+	.goods .good1 {
+		height: 58px;
+		height: 1126px;
+		
+	}  
+	.goods .good1 h2{
+		font-size: 22px;
+		font-weight: 200;
+		line-height: 58px;
+		color: #333333;
+	}
+	.goods #gLeft{
+		height: 340px;
+		width: 1150px;	
+		position: absolute;
+		bottom: 0px;
+		left: 0px;		
+	}
+	.goods #gRight{
+		height: 340px;
+		width: 1150px;		
+		position: absolute;
+		bottom: 0px;
+		left: 1126px;		
+	}
+	.goods .good2 ul{
+		white-space: normal;
+	}
+	
+	.goods .good2 ul li{
+		height: 300px;
+		width: 200px;
+		cursor:pointer;
+		display: inline-block;
+		padding: 0px 0px 0px 0px;
+		border-top: 1.5px solid #ffac13;
+		margin: 0px 24px 0px 0px;
+		text-align:center;
+		position: relative;	
+	}
+	.goods .good2 ul .gd2:nth-child(2){
+		border-top: 1.5px solid #83c44e;
+	}
+	.goods .good2 ul .gd2:nth-child(3){
+		border-top: 1.5px solid #2196f3;
+	}
+	.goods .good2 ul .gd2:nth-child(4){
+		border-top: 1.5px solid #e53935;
+	}
+	.goods .good2 ul .gd2:nth-child(5){
+		border-top: 1.5px solid #00c0a5;
+	}
+	.goods .good2 ul .gd2 a img{
+		
+		position: relative;
+		width: 160px;
+		height: 160px;
+		top: 20px;
+	}
+	.goods .good2 ul .gd2 h3{
+		position: relative;
+		margin: 0 20px 3px;
+		font-size: 14px;
+		font-weight: 400;
+		color: #212121;
+		display: block;
+		top: 20px;
+	}
+	.goods .good2 ul .gd2 .p1{
+		position: relative;
+		height: 18px;
+		font-size: 12px;
+		color: #B0B0B0;
+		white-space: normal;
+		top: 25px;
+	}
+	.goods .good2 ul .gd2 .p2{
+		line-height: 21px;
+		color: #ff6709;
+		position: relative;
+		top: 42px;
+	}
+	.goods .Gbtn {
+		position: absolute;
+		right: 0px;
+		top: 55px;
+		width: 70px;
+		height: 24.8px;
+		border: 1px solid #B0B0B0;	
+		font-size: 19px;
+		font-weight: bold;
+		cursor:pointer;
+		
+	}
+	.goods .Gbtn .bLeft{
+		position: absolute;
+		left: 0px;
+		width: 35px;
+		height: 24.8px;
+		text-align: center;
+		color: #B0B0B0;
+		
+	}
+	.goods .Gbtn .bRight{
+		position: absolute;
+		right: 0px;
+		width: 35px;
+		height: 24.8px;
+		text-align: center;
+		border-left: 1px solid #B0B0B0;
+		color: #B0B0B0;
 	}
 	.site-footer{
+		top: 10px;
+		
 		height: 272px;
 		width: 1126px;
 	
@@ -507,8 +701,7 @@
 		</div>
 		
 	</div>
-	
-	
+
 	<div class="site-header">
 		<div class="header-logo">
 			
@@ -567,6 +760,7 @@
 		</ul>
 	</div>	
 	<div class="home">
+
 		<div class="homeT">
 			<div class="homeT1">
 				<div  class="img show">
@@ -1232,16 +1426,147 @@
 		</div>
 		<div class="homeC">
 			<div class="homeC1">
-				<ul>
-					
+				<ul class="hc">
+					<li>
+						<img src="img/手机.png"/>
+						<p>选购手机</p>
+					</li>
+					<li>
+						<img src="img/礼物.png"/>
+						<p>企业团购</p>
+					</li>
+					<li>
+						<img src="img/F.png"/>
+						<p>F码通道</p>
+					</li>
+					<li>
+						<img src="img/手机卡.png"/>
+						<p>米粉卡</p>
+					</li>
+					<li>
+						<img src="img/以旧换新 图标-03.png"/>
+						<p>以旧换新</p>
+					</li>
+					<li>
+						<img src="img/话费充值.png"/>
+						<p>话费充值</p>
+					</li>
 				</ul>
 			</div>
 			<div class="homeC2">
-				
+				<ul class="c2">
+					<li>
+						<img src="https://i1.mifile.cn/a4/xmad_14993367479701_kbMcI.jpg"/>
+					</li>
+					<li>
+						<img src="https://i1.mifile.cn/a4/xmad_15040612224385_iZwyf.jpg"/>
+					</li>
+					<li>
+						<img src="https://i1.mifile.cn/a4/xmad_15036601080187_xGsZc.jpg"/>
+					</li>
+						
+				</ul>
 			</div>						
 		</div>
 		<div class="homeB">
 			
+		</div>
+	</div>
+	<div class="goods">
+		<div class="Gbtn">
+			<a class="bLeft">
+				<
+			</a>
+			<a class="bRight">
+				>
+			</a>
+		</div>
+		<div class="good1">
+			<h2>小米明星单品</h2>
+		</div>
+		<div class="good2" id="gLeft">
+			<ul>
+				<li class="gd2">
+					<a><img src="https://i1.mifile.cn/a4/xmad_15023585612783_DIKjh.png"/></a>					
+					<h3>贝医生巴氏牙刷(四色装)</h3>
+					<p class="p1">德日进口刷毛，专利科学布局</p>
+					<p class="p2">39.9元</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a4/6ef55907-bbed-49be-a2bb-be0821b5f7b8"/>
+					</a>
+					<h3>小米手环 2</h3>
+					<p class="p1">OLED 显示屏幕，升级计步算法</p>
+					<p class="p2">149元</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a4/T1ZYC_BjWv1RXrhCrK.jpg" />
+					</a>
+					<h3>米家压力IH电饭煲</h3>
+					<p class="p1">智能烹饪，压力IH加热技术</p>
+					<p class="p2">999元</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a4/xmad_14972549116226_tZpod.png"/>
+					</a>
+					<h3>贝医生巴氏牙刷(四色装)</h3>
+					<p class="p1">德日进口刷毛，专利科学布局</p>
+					<p class="p2">39.9元</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a4/de35852a-1be5-4ef5-846f-dcdd2efcfea6"/>
+					</a>
+					<h3>米家空气净化器Pro</h3>
+					<p class="p1">OLED显示屏幕，激光颗粒物传感器</p>
+					<p class="p2">1499元</p>
+				</li>
+			</ul>
+		</div>
+		<div class="good2" id="gRight">
+			<ul>
+				<li class="gd2">
+					<a><img src="https://i1.mifile.cn/a4/xmad_14966625747867_qcTyh.png"/></a>					
+					<h3>红米4X</h3>
+					<p class="p1">4100mAh超长续航，8 核处理器</p>
+					<p class="p2">699元起</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a4/xmad_1489401341687_vUojl.png"/>
+					</a>
+					<h3>红米Note 4X</h3>
+					<p class="p1">4100mAh超长续航，多彩金属</p>
+					<p class="p2">999元起</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a4/xmad_14926862610682_UhkfS.png" />
+					</a>
+					<h3>小米MIX</h3>
+					<p class="p1">6.4" 全面屏，全陶瓷机身 </p>
+					<p class="p2">3499元起</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a1/pms_1490077058.71391368!220x220.png"/>
+					</a>
+					<h3>小米电视4A 43英寸</h3>
+					<p class="p1">享小米分期12期免息</p>
+					<p class="p2">1999元</p>
+				</li>
+				<li  class="gd2">
+					<a>
+						<img src="https://i1.mifile.cn/a4/725a37e3-78b7-4298-8098-c40097bf179d"/>
+					</a>
+					<h3>小米笔记本</h3>
+					<p class="p1">更轻更薄，像杂志一样随身携带</p>
+					<p class="p2">3599元起</p>
+				</li>
+			</ul>
 		</div>
 	</div>
 	<div class="site-footer"></div>
@@ -1252,26 +1577,39 @@
 	
 		$(function(){
 			// 绑定li的点击事件
-				var index=$(".home .homeT .homeT1 .img img").index();
+			var index=$(".home .homeT .homeT1 .img img").index();
 			$(".home .homeT .homeT1 .btn li").click(function(){
 				index=$(this).index();	
 				$(".home .homeT .homeT1 .img").eq(index).addClass("show").removeClass("hide").siblings(".show").removeClass("show").addClass("hide");		
 			});
 			$(".home .homeT .homeT1 .back").click(function(){
+				
 				index--;
 				if(index==-1)
 					{
 						index=5;
 					}
-				$(".home .homeT .homeT1 .img").eq(index--).addClass("show").removeClass("hide").siblings(".show").removeClass("show").addClass("hide");
+				$(".home .homeT .homeT1 .img").eq(index).addClass("show").removeClass("hide").siblings(".show").removeClass("show").addClass("hide");
 			});
 			$(".home .homeT .homeT1 .next").click(function(){
+				
 				index++;
 				if(index==5)
 					{
 						index=0;
 					}
 				$(".home .homeT .homeT1 .img").eq(index).addClass("show").removeClass("hide").siblings(".show").removeClass("show").addClass("hide");
+			});		
+		});
+		$(function(){
+			$(".goods .Gbtn .bLeft").click(function(){
+				
+				$(".goods #gLeft").css({"left":"0px"});
+				$(".goods #gRight").css({"left":"1226px"});
+			});
+			$(".goods .Gbtn .bRight").click(function(){
+				$(".goods #gLeft").css({"left":"-1226px"});
+				$(".goods #gRight").css({"left":"0px"});
 			});
 		});
 	 </script>
