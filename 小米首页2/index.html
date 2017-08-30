@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小米首页</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	@-webkit-keyframes in{
+		0%{opacity:0}
+		100%{opacity:1}
+	}
+	@-webkit-keyframes out{
+		0%{opacity:1}
+		100%{opacity:0}
+	}
+	.sep{
+		margin: 0.05em;	
+		color: #424242;
+	}
+	.site-topbar{
+		position: relative;
+		height:40px ;	
+		background: #333;
+		font-size: 12PX;
+		color: #b0b0b0;
+	}
+	.site-topbar .center{
+		width: 1126px;
+		position: relative;
+		margin:0 auto;
+		
+	}
+	.site-topbar .center .login{
+		position: absolute;
+		height: 40px;
+		line-height: 40px;
+		right: 150px;
+		top:0px;
+		
+	}
+	.site-topbar .center .car{
+		width: 120px;
+		position: absolute;
+		height: 40px;
+		right: 0px;
+		top: 0px;
+		background: #424242;
+		transition-duration: 3s;
+	}
+	.site-topbar .center .car .car-show{
+		top: 40px;
+		right: 0px;
+		position: absolute;
+		width: 316px;
+		height: 92px;
+		background:#fff;
+		display: none;
+		transition-duration: 3s;
+		box-shadow:0px 0px 1px 0px;
+		transition:3s;
+		
+	}
+	.site-topbar .center .car .car-show span{
+		position: absolute;
+		top:38px;
+		left:74px;
+		color: #000;
+	}
+	.site-topbar .center .car a{
+		display: block;
+		padding-left: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.site-topbar .center .container{
+			
+		margin-right: auto;
+		margin-left: 0px;
+		display: inline-block;
+		height: 40px;
+		
+		line-height: 40px;
+					
+	}
+	.site-topbar .center  a{
+		text-decoration: none;
+		color: #b0b0b0;
+		
+	}
+	.site-topbar .center .container a:hover{
+		color: #fff;
+	}
+	.site-topbar .center .login a:hover{
+		color: #fff;
+	}
+	.site-topbar .center .car a:hover {
+		color: #ff9933;
+		background:#FFFFFF;
+	}
+	.site-topbar .center .car:hover > .car-show{
+		z-index:1;
+		display: block;
+		
+	}
+	.site-header{
+		height: 100px;
+		width: 1126px;
+		position:relative;
+		
+		margin:0 auto;
+	}
+	.site-header .header-logo{
+
+		background:url('img/1.png');
+		position: absolute;
+		width: 55px;
+		height: 55px;
+		line-height: 55px;
+		top:20px;
+	}
+	.site-header .header-nav {
+		position: absolute;
+		height: 100px;
+	    left:160px;
+		width: 800px;
+		
+	}
+	.site-header .header-nav .nav-list{
+		width: 820px;
+		height: 88px;
+		font-size: 16px;
+		line-height: 88px;
+		padding: 4px 0px 0px 60px;
+	}
+	.site-header .header-nav .nav-list li{
+		display:inline-block;
+		margin: 0px 0px 0px 6px;
+		padding: 0px 0px 0px 4px;
+
+	}
+	.site-header .header-nav .nav-list .nav-item a{
+		text-decoration: none;
+		color: #000;
+	}
+	.site-header .header-nav .nav-list li :hover{
+		color: #ff6600;
+	}
+	.site-header .header-search {
+		width: 235px;
+		height: 50px;
+		line-height: 50px;
+		position: absolute;
+		right: 0px;
+		top: 23px;
+		
+	}
+	.site-header .header-search .f .hide{
+		height:45px ;
+		width: 175px;
+		position: absolute;
+		right: 45px;
+		
+	}
+	.site-header .header-search .f .btn{
+		position: absolute;
+		height:45px ;
+		width: 45px;
+		right: 0px;
+	}
+	.home{
+		height: 645px;
+		width: 1126px;
+		border: solid #000000;
+		margin:0 auto;
+	}
+	.home .homeT{
+		height: 460px;
+		width: 1126px;
+		position: absolute;
+		
+	}
+	.home .homeT .homeT1 .img{
+		height: 460px;
+		width: 1126px;
+		position: absolute;
+		opacity: 0;		
+	}
+	.home .homeT .homeT1 .img img{
+		height: 460px;
+		width: 1126px;
+		position: absolute;
+	}
+	.home .homeT .homeT1  .back{
+		position: absolute;
+		display: inline-block;
+		height: 69px;
+		width: 41px;
+		left: 234px;
+		top: 198px;
+	}
+	.home .homeT .homeT1 .next{
+		position: absolute;
+		display: inline-block;
+		height: 69px;
+		width: 41px;
+		right: 0px;
+		top: 198px;
+	
+	}
+	.home .homeT .homeT1 .next:hover {
+		background: #000000;
+		opacity:0.5;
+		
+	}
+	.home .homeT .homeT1 .back:hover {
+		background: #000000;
+		opacity:0.5;
+		color: #FFFFFF;
+	}
+	.home .homeT .homeT1 .back img{
+		position: absolute;
+		width: 30px;
+		height: 36px;
+		margin: 14px 0px 0px 8px;
+	}
+	.home .homeT .homeT1  .next img{
+		width: 30px;
+		height: 36px;
+		margin: 14px 0px 0px 3px;		
+	}
+
+	.home .homeT  .btn{
+		position:absolute;
+		right:30px;
+		bottom:10px;
+	}
+	.home .homeT .btn li{
+		background:#4d4d4d;
+		list-style:none;
+		height:8px;
+		width:8px;
+		display:inline-block;
+		border-radius:4px;
+		margin-left:5px;
+		cursor:pointer;
+	}
+	.home .homeT .homeT1 .btn li:hover{
+		background: #FFFFFF;
+	}
+	.home .homeT .homeT1 .show{
+		-webkit-animation:in 1s;
+		opacity:1;
+	}
+	.home .homeT .homeT1 .hide{
+		-webkit-animation:out 1s;
+		opacity:0;
+	}
+	.home .homeT .homeT2{
+		width: 234px;
+		height: 460px;	
+		
+		position: absolute;
+		z-index: 1;
+		background-color: rgba(0,0,0,0.7);
+	}
+	.home .homeT .homeT2 .item{
+		position: absolute;
+		top: 20px;
+		
+	}
+	.home .homeT .homeT2 .item li{
+		padding: 0px 0px 0px 0px;
+		width: 234px;
+		height: 42px;	
+		list-style:none;
+		color: #FFFFFF;
+		cursor:pointer;
+		font-size: 14px;
+		position: relative;	
+	}
+	.home .homeT .homeT2 .item li:hover > div{
+		opacity: 1;
+	}
+	.home .homeT .homeT2 .item li:hover{
+		background: #ff6600;
+	}
+	.home .homeT .homeT2 .item li a{
+		position: relative;
+		top: 10px;
+		left: 28px;
+	}
+	.home .homeT .homeT2 .item li img{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	.home .homeT .homeT2 .item li .li-item{
+		position: absolute;
+		width:710px ;
+		height: 460px;
+		border: 1px solid#e0e0e0;
+		border-left: 0;
+		background: #FFFFFF;
+		left: 234px;
+		z-index: 2;
+		opacity: 0;
+		top: -21px;
+		cursor:pointer;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-1{
+		width: 230px;
+		height: 428px;
+		list-style-type: none;
+		padding: 2px 0;
+		position: relative;		
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-2{
+		width: 230px;
+		height: 428px;
+		list-style-type: none;
+		padding: 2px 0;
+		position: absolute;		
+		left: 250px;
+		top: 0px;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-3{
+		width: 160px;
+		height: 428px;
+		list-style-type: none;
+		padding: 2px 0;
+		position: absolute;		
+		left: 495px;
+		top: 0px;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-1 li{
+		width: 256px;
+		height: 76px;
+		display: list-item;
+		position: relative;
+		color: #000000;
+		background: #FFFFFF;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-2 li{
+		width: 256px;
+		height: 76px;
+		display: list-item;
+		position: relative;
+		color: #000000;
+		background: #FFFFFF;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-3 li{
+		width: 180px;
+		height: 76px;
+		display: list-item;
+		position: relative;
+		color: #000000;
+		background: #FFFFFF;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-1 li:hover{
+		
+		color: #FF6700;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-2 li:hover{
+		
+		color: #FF6700;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-3 li:hover{
+		
+		color: #FF6700;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-1 li img{
+		left: 12px;
+		position: absolute;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-2 li img{
+		left: 0px;
+		position: absolute;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-3 li img{
+		left: 0px;
+		position: absolute;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-1 li span{
+		left: 60px;
+		top: 23px;
+		position: absolute;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-2 li span{
+		left: 48px;
+		top: 23px;
+		position: absolute;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-3 li span{
+		left: 48px;
+		top: 23px;
+		position: absolute;
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-1 li a{	
+		width: 55px;
+		height: 22px;
+		border: 1px solid #FF6700;
+		background:#FFFFFF;
+		color: #FF6700;	
+		margin: 11px 132px;
+		position: absolute;
+		font-size: 13px;
+		 text-align:center
+		
+	}
+	.home .homeT .homeT2 .item li .li-item .li-item-2 li a{	
+		width: 55px;
+		height: 22px;
+		border: 1px solid #FF6700;
+		background:#FFFFFF;
+		color: #FF6700;	
+		margin: 11px 132px;
+		position: absolute;
+		font-size: 13px;
+		text-align:center
+		
+	}
+	.site-footer{
+		height: 272px;
+		width: 1126px;
+	
+	}
+	.site-info{
+		height: 116px;
+		width: 1126px;
+		
+	}
+	
+
+  </style>
+	</head>
+	
+ <body>
+	<div class="site-topbar">
+		<div class="center">
+			<div class="container">
+				<a href="javaScript:void(0)">小米商城</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">MIUI</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">米聊</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">游戏</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">多看阅读</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">云服务</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">金融</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">小米商城手机版</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">小米商城</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">问题反馈</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">Select Region</a>
+			</div>
+			
+			<div class="login">
+				<a href="javaScript:void(0)">登录</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">注册</a>
+					<span class="sep">|</span>
+				<a href="javaScript:void(0)">消息通知</a>
+			</div>
+			<div class="car">
+				<a>购物车(0)</a>		
+				<div class="car-show">
+					<span>购物车中还没有商品，赶紧选购吧！</span>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	
+	
+	<div class="site-header">
+		<div class="header-logo">
+			
+		</div>
+		<div class="header-nav">
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">小米手机</a>
+				</li>
+			
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">红米</a>
+				</li>
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">平板·笔记本</a>
+				</li>
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">电视</a>
+				</li>
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">盒子·影音</a>
+				</li>
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">路由器</a>
+				</li>
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">智能硬件</a>
+				</li>
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">服务</a>
+				</li>
+				<li class="nav-item">
+					<a class="link" href="javascript:vid(0);">社区</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-search">
+			<form class="f" action="" method="get">
+				<input class="hide" type="search" name="keyword"  />	
+				<input class="btn" type="submit" value="搜索"/>
+			
+			</form>
+		</div>	
+	</div>		
+	<div class="nav-menu">
+		<ul>
+			<li>
+				<div>
+					
+				</div>
+				<div>
+					
+				</div>
+				<p></p>
+			</li>
+		</ul>
+	</div>	
+	<div class="home">
+		<div class="homeT">
+			<div class="homeT1">
+				<div  class="img show">
+					<img src="https://i3.mifile.cn/a4/xmad_15035852903037_MBVOC.jpg"/>
+				</div>
+				<div  class="img">
+					<img  src="https://i3.mifile.cn/a4/xmad_15035842676308_WjwVb.jpg" />
+				</div>
+				<div  class="img">
+					<img src="https://i3.mifile.cn/a4/xmad_15035842972816_fkMxC.jpg"/>
+				</div>
+				<div  class="img">
+					<img src="https://i3.mifile.cn/a4/xmad_15034856177873_hzfGx.jpg" />
+				</div>
+				<div  class="img">
+					<img src="https://i3.mifile.cn/a4/xmad_15033953789128_uSFHO.jpg"/>
+				</div>
+				<div  class="img">
+					<img src="https://i3.mifile.cn/a4/xmad_14958834209224_inThg.jpg" />
+				</div>
+				
+				<ul class="btn">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="back">
+					<img class="tabBtn" src="img/返回.png" />
+			</div>
+			<div class="next">
+					<img class="tabBtn" src="img/更多.png"/>
+			</div>
+			
+			</div>
+			
+			
+			<div class="homeT2">
+				<ul class="item">
+					<li >
+						<a>手机 电话卡</a>						
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+						<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xm6_80.png?width=40&height=40"/>
+									<span>小米6</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/80pc-5x.png?width=40&height=40"/>
+									<span>小米5x</span>
+									<a>选购</a>
+								</li>	
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/max2_80.jpg?width=40&height=40"/>
+									<span>小米Max 2</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/5c_80.png?width=40&height=40"/>
+									<span>小米手机 5c</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/xmNOTE2-80.jpg?width=40&height=40"/>
+									<span>小米Note 2</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/MIX-80.jpg?width=40&height=40"/>
+									<span>小米MIX</span>
+									<a>选购</a>
+								</li>
+							</ul>
+							<ul class="li-item-2">
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/xm5S-80.jpg?width=40&height=40"/>
+									<span>小米5s</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/xm5S-plus-80.jpg?width=40&height=40"/>
+									<span>小米5s Plus</span>
+									<a>选购</a>
+								</li>	
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/805a.png?width=40&height=40"/>
+									<span>红米Note 5A</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/hmn4x80.png?width=40&height=40"/>
+									<span>红米Note 4X</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/hm4x_80.png?width=40&height=40"/>
+									<span>红米 4X</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/hm4-80.jpg?width=40&height=40"/>
+									<span>红米4</span>
+									<a>选购</a>
+								</li>
+							</ul>
+							<ul class="li-item-3">
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/80.jpg?width=40&height=40"/>
+									<span>移动4G+专区</span>									
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/compare.jpg?width=40&height=40"/>
+									<span>对比手机</span>					
+								</li>	
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/mifenka-1.jpg?width=40&height=40"/>
+									<span>米粉卡 日租卡</span>									
+								</li>
+								<li>									
+									<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/mimobile.jpg?width=40&height=40"/>
+									<span>小米移动 电话卡</span>
+								
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li >
+						<a>笔记本 平板</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li >
+						<a>电视 盒子</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li >
+						<a>路由器 智能硬件</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li >
+						<a>移动电源 电池 插线板</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li >
+						<a>耳机 音响</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li >
+						<a>保护套</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li>
+						<a>线材 支架 存储卡</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li>
+						<a>箱包 服饰 鞋 眼睛</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+					<li>
+						<a>米兔 生活周边</a>
+						<img src="img/箭头 右.png" width="16px" height="16px"/>
+					</li>
+				</ul>
+			</div>
+	
+		</div>
+		<div class="homeB">
+			<div class="homeB1">
+				
+			</div>
+			<div class="homeB2">
+				
+			</div>
+			<div class="homeB3">
+				
+			</div>
+			<div class="homeB3">
+				
+			</div>
+		</div>
+	</div>
+	<div class="site-footer"></div>
+	<div class="site-info"></div>
+	<div class="container"></div>
+	 <script src="js/jquery.min.js"></script>
+	 <script>
+	
+		$(function(){
+			// 绑定li的点击事件
+				var index=$(".home .homeT .homeT1 .img img").index();
+			$(".home .homeT .homeT1 .btn li").click(function(){
+				index=$(this).index();	
+				$(".home .homeT .homeT1 .img").eq(index).addClass("show").removeClass("hide").siblings(".show").removeClass("show").addClass("hide");		
+			});
+			$(".home .homeT .homeT1 .back").click(function(){
+				index--;
+				if(index==-1)
+					{
+						index=5;
+					}
+				$(".home .homeT .homeT1 .img").eq(index--).addClass("show").removeClass("hide").siblings(".show").removeClass("show").addClass("hide");
+			});
+			$(".home .homeT .homeT1 .next").click(function(){
+				index++;
+				if(index==5)
+					{
+						index=0;
+					}
+				$(".home .homeT .homeT1 .img").eq(index).addClass("show").removeClass("hide").siblings(".show").removeClass("show").addClass("hide");
+			});
+		});
+	 </script>
+ </body>
+</html>
