@@ -173,8 +173,9 @@
 	.home{
 		height: 645px;
 		width: 1126px;
-		border: solid #000000;
+		border:1px solid #000000;
 		margin:0 auto;
+		position: relative;
 	}
 	.home .homeT{
 		height: 460px;
@@ -282,7 +283,7 @@
 		position: relative;	
 	}
 	.home .homeT .homeT2 .item li:hover > div{
-		opacity: 1;
+		display: block;
 	}
 	.home .homeT .homeT2 .item li:hover{
 		background: #ff6600;
@@ -298,24 +299,65 @@
 		top: 10px;
 	}
 	.home .homeT .homeT2 .item li .li-item{
-		position: absolute;
-		width:710px ;
+		position: relative;
+		width:720px ;
 		height: 460px;
 		border: 1px solid#e0e0e0;
 		border-left: 0;
 		background: #FFFFFF;
 		left: 234px;
 		z-index: 2;
-		opacity: 0;
-		top: -21px;
+		display: none;
+		top: 0px;
 		cursor:pointer;
+		margin: -41px 0px;
+		
+	}
+
+	.home .homeT .homeT2 .item :nth-child(2) .li-item{
+		margin: -83px 0px;
+		width:510px ;	
+		
+	}
+	.home .homeT .homeT2 .item :nth-child(3) .li-item{
+		margin: -125px 0px;
+		width:900px ;
+	}
+	.home .homeT .homeT2 .item :nth-child(4) .li-item{
+	
+		margin: -167px 0px;
+	}
+	.home .homeT .homeT2 .item :nth-child(5) .li-item{
+		margin: -209px 0px;
+		width:460px ;
+	}
+	.home .homeT .homeT2 .item :nth-child(6) .li-item{
+		margin: -251px 0px;
+		width:900px ;
+	}
+	.home .homeT .homeT2 .item :nth-child(7) .li-item{
+		margin: -293px 0px;
+		width:255px ;
+	}
+	.home .homeT .homeT2 .item :nth-child(8) .li-item{
+		margin: -335px 0px;
+		width:255px ;
+	}
+	.home .homeT .homeT2 .item :nth-child(9) .li-item{
+		margin: -377px 0px;
+		width:255px ;
+	}
+	.home .homeT .homeT2 .item :nth-child(10) .li-item{
+		margin: -419px 0px;
+		width:255px ;
 	}
 	.home .homeT .homeT2 .item li .li-item .li-item-1{
 		width: 230px;
 		height: 428px;
 		list-style-type: none;
 		padding: 2px 0;
-		position: relative;		
+		position: absolute;	
+		
 	}
 	.home .homeT .homeT2 .item li .li-item .li-item-2{
 		width: 230px;
@@ -323,91 +365,64 @@
 		list-style-type: none;
 		padding: 2px 0;
 		position: absolute;		
-		left: 250px;
+		left: 240px;
 		top: 0px;
+		
 	}
 	.home .homeT .homeT2 .item li .li-item .li-item-3{
-		width: 160px;
+		width: 230px;
 		height: 428px;
 		list-style-type: none;
 		padding: 2px 0;
 		position: absolute;		
-		left: 495px;
+		left: 480px;
 		top: 0px;
+		
 	}
-	.home .homeT .homeT2 .item li .li-item .li-item-1 li{
-		width: 256px;
+	.home .homeT .homeT2 .item li .li-item .li-item-4{
+		width: 230px;
+		height: 428px;
+		list-style-type: none;
+		padding: 2px 0;
+		position: absolute;		
+		left: 720px;
+		top: 0px;
+		
+	}
+	.home .homeT .homeT2 .item li .li-item li{
+		width: 200px;
 		height: 76px;
 		display: list-item;
 		position: relative;
 		color: #000000;
 		background: #FFFFFF;
+		border: 1px #FF9933;
 	}
-	.home .homeT .homeT2 .item li .li-item .li-item-2 li{
-		width: 256px;
-		height: 76px;
-		display: list-item;
-		position: relative;
-		color: #000000;
-		background: #FFFFFF;
-	}
-	.home .homeT .homeT2 .item li .li-item .li-item-3 li{
-		width: 180px;
-		height: 76px;
-		display: list-item;
-		position: relative;
-		color: #000000;
-		background: #FFFFFF;
-	}
-	.home .homeT .homeT2 .item li .li-item .li-item-1 li:hover{
+
+	.home .homeT .homeT2 .item li .li-item  li:hover{
 		
 		color: #FF6700;
 	}
-	.home .homeT .homeT2 .item li .li-item .li-item-2 li:hover{
-		
-		color: #FF6700;
-	}
-	.home .homeT .homeT2 .item li .li-item .li-item-3 li:hover{
-		
-		color: #FF6700;
-	}
-	.home .homeT .homeT2 .item li .li-item .li-item-1 li img{
+	.home .homeT .homeT2 .item li .li-item li img{
 		left: 12px;
 		position: absolute;
 	}
-	.home .homeT .homeT2 .item li .li-item .li-item-2 li img{
-		left: 0px;
-		position: absolute;
-	}
-	.home .homeT .homeT2 .item li .li-item .li-item-3 li img{
-		left: 0px;
-		position: absolute;
-	}
-	.home .homeT .homeT2 .item li .li-item .li-item-1 li span{
+	.home .homeT .homeT2 .item li .li-item  li span{
 		left: 60px;
 		top: 23px;
 		position: absolute;
 	}
-	.home .homeT .homeT2 .item li .li-item .li-item-2 li span{
-		left: 48px;
-		top: 23px;
-		position: absolute;
-	}
-	.home .homeT .homeT2 .item li .li-item .li-item-3 li span{
-		left: 48px;
-		top: 23px;
-		position: absolute;
-	}
+
 	.home .homeT .homeT2 .item li .li-item .li-item-1 li a{	
 		width: 55px;
 		height: 22px;
 		border: 1px solid #FF6700;
-		background:#FFFFFF;
 		color: #FF6700;	
-		margin: 11px 132px;
+		right: 0px;
 		position: absolute;
 		font-size: 13px;
-		 text-align:center
+	    text-align:center;
+	    margin: 11px 146px  ;
 		
 	}
 	.home .homeT .homeT2 .item li .li-item .li-item-2 li a{	
@@ -416,11 +431,23 @@
 		border: 1px solid #FF6700;
 		background:#FFFFFF;
 		color: #FF6700;	
-		margin: 11px 132px;
+		margin: 11px 146px;
 		position: absolute;
 		font-size: 13px;
 		text-align:center
 		
+	}
+	.home .homeC{
+		width: 1126px;
+		height: 170px;
+		border: 1px solid black;
+		position: absolute;
+		bottom: 0px;
+	}
+	.home .homeC .homeC1{
+		width: 234px;
+		color: #333333;
+		float: left;
 	}
 	.site-footer{
 		height: 272px;
@@ -581,7 +608,7 @@
 			
 			<div class="homeT2">
 				<ul class="item">
-					<li >
+					<li class="1">
 						<a>手机 电话卡</a>						
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
 						<div class="li-item">
@@ -670,59 +697,551 @@
 							</ul>
 						</div>
 					</li>
-					<li >
+					<li  class="2">
 						<a>笔记本 平板</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+						<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/bijiben80.jpg?width=40&height=40"/>
+									<span>笔记本12.5英寸</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/bijiben80.jpg?width=40&height=40"/>
+									<span>笔记本13.3英寸</span>
+									<a>选购</a>
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mipad3_80.jpg?width=40&height=40"/>
+									<span>小米平板 3</span>
+									<a>选购</a>
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/bjbcdq80.jpg?width=40&height=40"/>
+									<span>USB-C电源适配器</span>
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/usbzjqggg80.jpg?width=40&height=40"/>
+									<span>USB-C转接器</span>
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/neidanbao80.jpg?width=40&height=40"/>
+									<span>小米笔记本内胆包</span>
+									
+								</li>
+							</ul>
+							<ul class="li-item-2">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/ymjp80.jpg?width=40&height=40"/>
+									<span>悦米机械键盘</span>
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40"/>
+									<span>小米便携鼠标</span>
+									
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/wxsb80.png?width=40&height=40"/>
+									<span>小米无线鼠标</span>
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40"/>
+									<span>鼠标垫</span>
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/USBC80.jpg?width=40&height=40"/>
+									<span>DisPlayPort转接器</span>
+									
+								</li>
+								
+							</ul>
+						</div>
 					</li>
-					<li >
+					<li  class="3">
 						<a>电视 盒子</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+						<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/80xmds_49.jpg?width=40&height=40"/>
+									<span>小米电视4 49英寸</span>	
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/80xmds_65.jpg?width=40&height=40"/>
+									<span>小米电视4 55英寸</span>							
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/80xmds_65.jpg?width=40&height=40"/>
+									<span>小米电视4 65英寸</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/zuodaohang.jpg?width=40&height=40"/>
+									<span>小米电视4A 32英寸</span>										
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/4A43.jpg?width=40&height=40"/>
+									<span>小米电视4A 43英寸</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xp80_49.jpg?width=40&height=40"/>
+									<span>小米电视4A 49英寸</span>								
+								</li>
+							</ul>
+							<ul class="li-item-2">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xp80_55.jpg?width=40&height=40"/>
+									<span>小米电视4A 55英寸</span>							
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xp80_65.jpg?width=40&height=40"/>
+									<span>小米电视4A 65英寸</span>								
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/mitv3s48.jpg?width=40&height=40"/>
+									<span>小米电视3s 48英寸</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/553s80.png?width=40&height=40"/>
+									<span>小米电视3s 55英寸</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/018080.png?width=40&height=40"/>
+									<span>小米电视3s 60英寸</span>							
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/653s80.png?width=40&height=40"/>
+									<span>小米电视3s 65英寸</span>							
+								</li>
+							</ul>
+							<ul class="li-item-3">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/6580side.jpg?width=40&height=40"/>
+									<span>小米电视3s 65英寸 曲面</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/tv70.png?width=40&height=40"/>
+									<span>小米电视3 70英寸</span>	
+									
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/hezi80-80.jpg?width=40&height=40"/>
+									<span>小米盒子 3s</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/hezi80-80.jpg?width=40&height=40"/>
+									<span>小米盒子 3c</span>
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/hezizengqiangban80side.jpg?width=40&height=40"/>
+									<span>小米盒子 3 增强版</span>							
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/80x80.jpg?width=40&height=40"/>
+									<span>家庭音响</span>								
+								</li>
+							</ul>
+							<ul class="li-item-4">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/iconaz80.jpg?width=40&height=40"/>
+									<span>安装服务</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/dianshipeijian.jpg?width=40&height=40"/>
+									<span>电视盒子配件</span>								
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/huiyuan.png?width=40&height=40"/>
+									<span>小米电视会员</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/ertong1.png?width=40&height=40"/>
+									<span>小米儿童会员</span>								
+								</li>					
+							</ul>
+						</div>
 					</li>
 					<li >
 						<a>路由器 智能硬件</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+						<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/phcplus80.jpg?width=40&height=40"/>
+									<span>九号平衡车</span>	
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/doodle/jiqiren.jpg?width=40&height=40"/>
+									<span>米家扫地机器人及配件</span>							
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/VRPLAY2.png?width=40&height=40"/>
+									<span>小米VR眼镜</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/luyouqi-80.jpg?width=40&height=40"/>
+									<span>小米路由器</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/zxc80-80.jpg?width=40&height=40"/>
+									<span>电助力折叠自行车</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/video/shuihu80.jpg?width=40&height=40"/>
+									<span>米家恒温电水壶</span>								
+								</li>
+							</ul>
+							<ul class="li-item-2">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/czjhq80.jpg?width=40&height=40"/>
+									<span>米家车载空气净化器</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/dianhuashoubiao80.jpg?width=40&height=40"/>
+									<span>手表</span>								
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/dianfanbao-80.jpg?width=40&height=40"/>
+									<span>米家智能电饭煲</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xiaobai80.jpg?width=40&height=40"/>
+									<span>智能摄像机/相机/微单</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/video/jinghuaqilvxin80.jpg?width=40&height=40"/>
+									<span>净化器及滤芯</span>							
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/jingshuiqiandlvxin-80.jpg?width=40&height=40"/>
+									<span>净水器及滤芯</span>							
+								</li>
+							</ul>
+							<ul class="li-item-3">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/video/shouhuan280.jpg?width=40&height=40"/>
+									<span>手环及配件</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/yashua80.jpg?width=40&height=40"/>
+									<span>牙刷</span>
+									
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/zhinengdeng-80.jpg?width=40&height=40"/>
+									<span>智能灯</span>							
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/gushiji80.jpg?width=40&height=40"/>
+									<span>米兔智能故事机</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/zhinengjiatingtaozhuang-80.jpg?width=40&height=40"/>
+									<span>智能家庭组合</span>
+									
+								</li>
+								
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xueyaji-80.jpg?width=40&height=40"/>
+									<span>血压计</span>								
+								</li>
+							</ul>
+							<ul class="li-item-4">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/scale.jpg?width=40&height=40"/>
+									<span>体重称/体脂称</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/huabanche80.jpg?width=40&height=40"/>
+									<span>电动滑板车</span>								
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/wurenji80.jpg?width=40&height=40"/>
+									<span>小米无人机</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/jly80.jpg?width=40&height=40"/>
+									<span>米家行车记录仪</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/djj80.jpg?width=40&height=40"/>
+									<span>小米米家对讲机</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/doodle/znyjdaohang.jpg?width=40&height=40"/>
+									<span>全部智能硬件</span>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li >
 						<a>移动电源 电池 插线板</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+						<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/dianyuan280.jpg?width=40&height=40"/>
+									<span>小米移动电源</span>	
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/c1xb343.jpg?width=40&height=40"/>
+									<span>插线板</span>							
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/yidongdianyuan.jpg?width=40&height=40"/>
+									<span>品牌移动电源</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/dianyuanfujian.jpg?width=40&height=40"/>
+									<span>移动电源附件</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/chongdianqi-80.jpg?width=40&height=40"/>
+									<span>充电器</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/5Battery1.jpg?width=40&height=40"/>
+									<span>彩虹5号电池</span>								
+								</li>
+							</ul>
+							<ul class="li-item-2">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/5Battery1.jpg?width=40&height=40"/>
+									<span>彩虹7号电池</span>								
+								</li>
+								
+							</ul>
+						</div>
 					</li>
 					<li >
 						<a>耳机 音响</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+						<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/toudai80.jpg?width=40&height=40"/>
+									<span>小米头戴式耳机</span>	
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/tdsqs80.jpg?width=40&height=40"/>
+									<span>头戴式耳机轻松版</span>							
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xmjzej80.jpg?width=40&height=40"/>
+									<span>小米降噪耳机</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/qtpro80.jpg?width=40&height=40"/>
+									<span>小米铁圈耳机 Pro</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/quantie.jpg?width=40&height=40"/>
+									<span>小米铁圈耳机</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/jiaonang80.jpg?width=40&height=40"/>
+									<span>小米胶囊耳机</span>								
+								</li>
+							</ul>
+							<ul class="li-item-2">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/huosai1.jpg?width=40&height=40"/>
+									<span>小米活塞耳机清新版</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/bluetoothheadset.jpg?width=40&height=40"/>
+									<span>小米蓝牙耳机</span>								
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/yundong80.jpg?width=40&height=40"/>
+									<span>小米运动蓝牙耳机</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/3-80.jpg?width=40&height=40"/>
+									<span>小米运动蓝牙耳机mini</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/video/pinpai80.jpg?width=40&height=40"/>
+									<span>品牌耳机</span>							
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/wlyx80.jpg?width=40&height=40"/>
+									<span>小米网络音响</span>							
+								</li>
+							</ul>
+							<ul class="li-item-3">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/pocketaudio.png?width=40&height=40"/>
+									<span>小米蓝牙音响</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/suishen-80.jpg?width=40&height=40"/>
+									<span>小米随身蓝牙音响</span>
+									
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xiaogangpao2-hei-80.jpg?width=40&height=40"/>
+									<span>小钢炮音响2</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/fhzlyyx80.jpg?width=40&height=40"/>
+									<span>小米方盒子蓝牙音响2</span>
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/fhz80.jpg?width=40&height=40"/>
+									<span>小米方盒子蓝牙音响</span>							
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/naozhong80.jpg?width=40&height=40"/>
+									<span>小米音乐闹钟</span>								
+								</li>
+							</ul>
+							<ul class="li-item-4">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mituyinx80.jpg?width=40&height=40"/>
+									<span>小米米兔音响</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/chechong1.jpg?width=40&height=40"/>
+									<span>音乐蓝牙车充</span>								
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/20170707135935.jpg?width=40&height=40"/>
+									<span>小米蓝牙音频接收器</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/80x80.jpg?width=40&height=40"/>
+									<span>小米AI音响</span>								
+								</li>							
+							</ul>
+						</div>
 					</li>
 					<li >
 						<a>保护套</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+						<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/tiemo.jpg?width=40&height=40"/>
+									<span>贴膜</span>			
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/baohu.jpg?width=40&height=40"/>
+									<span>保护壳/保护套</span>							
+								</li>					
+							</ul>						
+						</div>
 					</li>
 					<li>
 						<a>线材 支架 存储卡</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+								<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/xiancai.jpg?width=40&height=40"/>
+									<span>线材</span>	
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/zipaigan.jpg?width=40&height=40"/>
+									<span>自拍杆</span>							
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/zhijia.jpg?width=40&height=40"/>
+									<span>手机支架</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/cunchu.jpg?width=40&height=40"/>
+									<span>存储卡</span>									
+								</li>		
+							</ul>						
+						</div>
 					</li>
 					<li>
 						<a>箱包 服饰 鞋 眼睛</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+								<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/xiangbao-80.jpg?width=40&height=40"/>
+									<span>箱包</span>	
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/lvxingxiang.jpg?width=40&height=40"/>
+									<span>90分旅行箱</span>							
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/huise2-80.jpg?width=40&height=40"/>
+									<span>服饰</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/ydx80.jpg?width=40&height=40"/>
+									<span>运动鞋 板鞋</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/tyj80.jpg?width=40&height=40"/>
+									<span>眼镜</span>									
+								</li>						
+							</ul>						
+						</div>
 					</li>
 					<li>
 						<a>米兔 生活周边</a>
 						<img src="img/箭头 右.png" width="16px" height="16px"/>
+								<div class="li-item">
+							<ul class="li-item-1">
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mitu-80.jpg?width=40&height=40"/>
+									<span>米兔玩偶</span>	
+									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/15/goods/sidebar/zhoubian1.jpg?width=40&height=40"/>
+									<span>生活周边</span>							
+								</li>	
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/zazhi1021-80.jpg?width=40&height=40"/>
+									<span>《小米》会刊</span>								
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mj80.jpg?width=40&height=40"/>
+									<span>毛巾/浴巾</span>									
+								</li>
+								<li>									
+									<img src="https://i1.mifile.cn/f/i/g/2015/cn-index/rjcd80.jpg?width=40&height=40"/>
+									<span>8H乳胶床品</span>									
+								</li>								
+							</ul>						
+						</div>
 					</li>
 				</ul>
 			</div>
 	
 		</div>
+		<div class="homeC">
+			<div class="homeC1">
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="homeC2">
+				
+			</div>						
+		</div>
 		<div class="homeB">
-			<div class="homeB1">
-				
-			</div>
-			<div class="homeB2">
-				
-			</div>
-			<div class="homeB3">
-				
-			</div>
-			<div class="homeB3">
-				
-			</div>
+			
 		</div>
 	</div>
 	<div class="site-footer"></div>
