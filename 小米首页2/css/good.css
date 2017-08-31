@@ -1,0 +1,186 @@
+@-webkit-keyframes leftOut {
+	0% {
+		left: 0px;
+	}
+	100 {
+		left: -1226px;
+	}
+}
+
+.goods .leftOut {
+	-webkit-animation: leftOut 1s;
+	left: -1226px;
+}
+
+@-webkit-keyframes leftIn {
+	0% {
+		left: -1226px;
+	}
+	100 {
+		left: 0px;
+	}
+}
+
+.goods .leftIn {
+	-webkit-animation: leftIn 1s;
+	left: 0px;
+}
+
+@-webkit-keyframes rightOut {
+	0% {
+		left: 0px;
+	}
+	100 {
+		left: 1226px;
+	}
+}
+
+.goods .rightOut {
+	-webkit-animation: rightOut 1s;
+	left: 1226px;
+}
+
+@-webkit-keyframes rightIn {
+	0% {
+		left: 1226px;
+	}
+	100 {
+		left: 0px;
+	}
+}
+
+.goods .rightIn {
+	-webkit-animation: rightIn 1s;
+	left: 0px;
+}
+.goods {
+	width: 1126px;
+	height: 438px;
+	display: block;
+	position: relative;
+	top: 23px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.goods .good1 {
+	height: 58px;
+	height: 1126px;
+}
+
+.goods .good1 h2 {
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+	color: #333333;
+}
+
+.goods #gLeft {
+	height: 340px;
+	width: 1150px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.goods #gRight {
+	height: 340px;
+	width: 1150px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.goods .good2 ul {
+	white-space: normal;
+}
+
+.goods .good2 ul li {
+	height: 300px;
+	width: 200px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0px 0px 0px 0px;
+	border-top: 1.5px solid #ffac13;
+	margin: 0px 24px 0px 0px;
+	text-align: center;
+	position: relative;
+}
+
+.goods .good2 ul .gd2:nth-child(2) {
+	border-top: 1.5px solid #83c44e;
+}
+
+.goods .good2 ul .gd2:nth-child(3) {
+	border-top: 1.5px solid #2196f3;
+}
+
+.goods .good2 ul .gd2:nth-child(4) {
+	border-top: 1.5px solid #e53935;
+}
+
+.goods .good2 ul .gd2:nth-child(5) {
+	border-top: 1.5px solid #00c0a5;
+}
+
+.goods .good2 ul .gd2 a img {
+	position: relative;
+	width: 160px;
+	height: 160px;
+	top: 20px;
+}
+
+.goods .good2 ul .gd2 h3 {
+	position: relative;
+	margin: 0 20px 3px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #212121;
+	display: block;
+	top: 20px;
+}
+
+.goods .good2 ul .gd2 .p1 {
+	position: relative;
+	height: 18px;
+	font-size: 12px;
+	color: #B0B0B0;
+	white-space: normal;
+	top: 25px;
+}
+
+.goods .good2 ul .gd2 .p2 {
+	line-height: 21px;
+	color: #ff6709;
+	position: relative;
+	top: 42px;
+}
+
+.goods .Gbtn {
+	position: absolute;
+	right: 0px;
+	top: 55px;
+	width: 70px;
+	height: 24.8px;
+	border: 1px solid #B0B0B0;
+	font-size: 19px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.goods .Gbtn .bLeft {
+	position: absolute;
+	left: 0px;
+	width: 35px;
+	height: 24.8px;
+	text-align: center;
+	color: #B0B0B0;
+}
+
+.goods .Gbtn .bRight {
+	position: absolute;
+	right: 0px;
+	width: 35px;
+	height: 24.8px;
+	text-align: center;
+	border-left: 1px solid #B0B0B0;
+	color: #B0B0B0;
+}

@@ -1,0 +1,160 @@
+
+.site-topbar {
+	position: relative;
+	height: 40px;
+	background: #333;
+	font-size: 12PX;
+	color: #b0b0b0;
+}
+
+.site-topbar .center {
+	width: 1126px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.site-topbar .center .login {
+	position: absolute;
+	height: 40px;
+	line-height: 40px;
+	right: 150px;
+	top: 0px;
+}
+
+.site-topbar .center .car {
+	width: 120px;
+	position: absolute;
+	height: 40px;
+	right: 0px;
+	top: 0px;
+	background: #424242;
+	transition-duration: 3s;
+}
+
+.site-topbar .center .car .car-show {
+	top: 40px;
+	right: 0px;
+	position: absolute;
+	width: 316px;
+	height: 92px;
+	background: #fff;
+	display: none;
+	transition-duration: 3s;
+	box-shadow: 0px 0px 1px 0px;
+	transition: 3s;
+}
+
+.site-topbar .center .car .car-show span {
+	position: absolute;
+	top: 38px;
+	left: 74px;
+	color: #000;
+}
+
+.site-topbar .center .car a {
+	display: block;
+	padding-left: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.site-topbar .center .container {
+	margin-right: auto;
+	margin-left: 0px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.site-topbar .center a {
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+.site-topbar .center .container a:hover {
+	color: #fff;
+}
+
+.site-topbar .center .login a:hover {
+	color: #fff;
+}
+
+.site-topbar .center .car a:hover {
+	color: #ff9933;
+	background: #FFFFFF;
+}
+
+.site-topbar .center .car:hover>.car-show {
+	z-index: 1;
+	display: block;
+}
+
+.site-header {
+	height: 100px;
+	width: 1126px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.site-header .header-logo {
+	background: url('img/1.png');
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	top: 20px;
+}
+
+.site-header .header-nav {
+	position: absolute;
+	height: 100px;
+	left: 160px;
+	width: 800px;
+}
+
+.site-header .header-nav .nav-list {
+	width: 820px;
+	height: 88px;
+	font-size: 16px;
+	line-height: 88px;
+	padding: 4px 0px 0px 60px;
+}
+
+.site-header .header-nav .nav-list li {
+	display: inline-block;
+	margin: 0px 0px 0px 6px;
+	padding: 0px 0px 0px 4px;
+}
+
+.site-header .header-nav .nav-list .nav-item a {
+	text-decoration: none;
+	color: #000;
+}
+
+.site-header .header-nav .nav-list li :hover {
+	color: #ff6600;
+}
+
+.site-header .header-search {
+	width: 235px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	right: 0px;
+	top: 23px;
+}
+
+.site-header .header-search .f .hide {
+	height: 50px;
+	width: 175px;
+	position: absolute;
+	right: 52px;
+}
+
+.site-header .header-search .f .btn {
+	position: absolute;
+	height: 50px;
+	width: 52px;
+	right: 0px;
+	background: url(img/搜索.png) no-repeat;
+}

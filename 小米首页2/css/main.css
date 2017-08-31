@@ -1,0 +1,221 @@
+
+.main {
+	width: 1126px;
+	height: 5308px;
+	position: relative;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+.main .main-box {
+	height: 686px;
+	width: 1126px;
+	border: 1px solid red;
+	position: relative;
+}
+.main .main-box .box-hd{
+	width: 1126px;
+	height: 58px;
+	position: relative;
+}
+.main .main-box .box-hd h2{
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+	color: #333333;
+}
+.main .main-box .box-hd .more{
+	width: 280px;
+	height: 42.4px;
+	line-height: 42.4px;
+	position: absolute;
+	display: block;
+	right: 0px;
+	top: 0px;	
+}
+.main .main-box .box-hd .more ul {
+	position: absolute;
+	right: 0px;
+}
+.main .main-box .box-hd .more ul li{	
+	display: inline-block;
+	cursor: pointer;
+	list-style:none;
+ 	margin: 9px 9px;
+}
+.main .main-box .box-bd {
+	
+	height: 628px;
+	width: 1126px;
+	position: absolute;
+	top: 58px;
+	border: 1px solid yellow;
+}
+.main .main-box .box-bd .bdLeft{
+	width: 245px;
+	height: 628px;
+	position: absolute;
+	left: 0px;
+}
+.main .main-box .box-bd .bdLeft ul li img{
+	width: 245px;
+	height: 614px;
+}
+.main .main-box .box-bd  li:hover{
+	box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+	
+}
+.main .main-box .box-bd .bdRight{
+	position: absolute;
+	right: 0px;
+	width: 870px;
+	height: 614px;
+	display: none;
+}
+.main .main-box .box-bd .bdRight ul li {
+	position: relative;
+	height: 304px;
+	width: 211px;
+	display: inline-block;
+	overflow:hidden;	
+}
+
+.main .main-box .box-bd .bdRight ul li:nth-child(8){
+	height: 152px;
+	display: inline-block;
+	float: right;
+}
+.main .main-box .box-bd .bdRight ul li:nth-child(8) img{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 32px;
+} 
+.main .main-box .box-bd .bdRight ul li:nth-child(8) h3{
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	width: 110px;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0px 0px;
+	white-space: nowrap;
+}
+.main .main-box .box-bd .bdRight ul li:nth-child(8) p{
+	color: #FF6700;
+	font-size: 12px;
+	margin: 66px 20px;
+	font-weight: 600;
+}
+.main .main-box .box-bd .bdRight ul li:nth-child(9){
+	height: 152px;
+	display: inline-block;
+	position: absolute;
+	float: right;
+	bottom: 0px;
+	right: 0px;
+	
+}
+.main .main-box .box-bd .bdRight ul li:nth-child(9) .tu{
+	position: absolute;
+	top: 54px;
+	right: 30px;
+	width: 48px;
+	height: 50.4px;
+	
+}
+.main .main-box .box-bd .bdRight ul li:nth-child(9) .zi{
+	position: absolute;
+	margin: 54px 23px;
+	font-size: 18px;
+	color: #333333;
+}
+.main .main-box .box-bd .bdRight ul li:nth-child(9) .zi small{
+	position: absolute;
+	font-size:12px;
+	color: #757575;
+	margin: 0px 0px;
+}
+.main .main-box .box-bd .bdRight ul li .img {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 32px;
+	top: 30px;
+}
+.main .main-box .box-bd .bdRight ul li .img img{	
+	width: 150px;
+	height: 150px;
+}
+.main .main-box .box-bd .bdRight ul li h3{
+	color: #333333;
+	position: absolute;
+	font-size: 14px;
+	text-align: center;
+	top: 200px;
+	width: 211px;
+	
+}
+.main .main-box .box-bd .bdRight ul li .desc{
+	position: absolute;
+	height: 18px;
+	font-size: 12px;
+	text-align: center;
+	color: #B0B0B0;
+	margin: 0px 0px;
+	top: 227px;
+	width: 211px;
+}
+.main .main-box .box-bd .bdRight ul li .price{
+	position: absolute;
+	text-align: center;
+	color: #FF6700;
+	width: 211px;
+	bottom: 22px;
+}
+.main .main-box .box-bd .bdRight ul li del{
+	color: #B0B0B0;
+}
+.main .main-box .box-bd .bdRight ul li .flag{
+	background-color: #E53935;
+	position: absolute;
+	top: 0px;
+	left: 36%;
+	z-index: 2;
+	width: 64px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+.main .main-box .box-bd .bdRight ul li .bot{
+	position: absolute;
+	width: 211px;
+	z-index: 3;
+	background-color: #FF6700;
+	font-size: 12px;
+	height: 85px;
+	text-align: center;
+	bottom: -85px;		
+}
+
+.main .main-box .box-bd .bdRight ul li .bot a{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 211px;
+	height: 93px;
+}
+.main .main-box .box-bd .bdRight ul li .bot .review{
+	display: inline-block;
+	color: #FFFFFF;
+	margin:18px 5px;
+	overflow: hidden;
+}
+.main .main-box .box-bd .bdRight ul li .bot .author{
+	color: rgba(255,255,255,0.6);
+	white-space:nowrap;
+	display: inline-block;	
+	overflow: hidden;
+}
