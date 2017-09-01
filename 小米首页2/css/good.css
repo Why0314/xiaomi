@@ -61,11 +61,14 @@
 	top: 23px;
 	margin: 0 auto;
 	overflow: hidden;
+	
 }
 
 .goods .good1 {
 	height: 58px;
-	height: 1126px;
+	position: absolute;
+	top: 39px;
+	
 }
 
 .goods .good1 h2 {
@@ -73,6 +76,7 @@
 	font-weight: 200;
 	line-height: 58px;
 	color: #333333;
+	
 }
 
 .goods #gLeft {
@@ -100,10 +104,11 @@
 	display: inline-block;
 	padding: 0px 0px 0px 0px;
 	border-top: 1.5px solid #ffac13;
-	margin: 0px 24px 0px 0px;
+	margin: 0px 24px 0px 2px;
 	text-align: center;
 	position: relative;
-}
+	background-color: #FFFFFF !important;
+	}
 
 .goods .good2 ul .gd2:nth-child(2) {
 	border-top: 1.5px solid #83c44e;

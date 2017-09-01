@@ -1,0 +1,98 @@
+.hot{
+	height: 473px;
+	width: 1126px;
+	position: relative;
+	margin: 0 auto;
+	
+}
+.hot .hot-hd{
+	position: relative;
+	height: 58px;
+	width: 1126px;
+	
+}
+.hot .hot-hd h2{
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+	color:rgb(51,51,51) ;
+}
+.hot-bd{
+	height: 415px;
+	width: 1126px;
+	position: relative;
+	
+}
+.hot .hot-bd ul li{
+	position: absolute;
+	width: 267px;
+	height: 415px;
+	background-color: white !important;
+	display:inline-block;
+	margin: 0px 0px 0px 0px;
+	left: 0px;
+	transition:all 0.2s linear;
+}
+.hot .hot-bd ul li:hover{
+	box-shadow:0px 15px 30px rgba(0,0,0,0.2);
+	top: -2px;
+}
+ 
+.hot .hot-bd ul li:nth-child(2){
+	left: 288px;
+}
+.hot .hot-bd ul li:nth-child(3){
+	left: 577px;
+}
+.hot .hot-bd ul li:nth-child(4){
+	left: 864px;
+}
+.hot .hot-bd ul li img{
+	width: 267px;
+	height: 220px;
+}
+.hot .hot-bd ul li .review{
+	height: 72px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	overflow: hidden;
+	margin: 0px 28px 22px;
+	
+	
+}
+.hot .hot-bd ul li .author{
+	position: relative;
+	height: 18px;
+	font-size: 12px;
+	color: rgb(176,176,176);
+	margin: 0px 28px 8px;
+	padding: 0px 10px 0px 0px;
+	
+}
+.hot .hot-bd ul li div{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0px 27px;
+	overflow: hidden;
+	display: inline-block;
+	
+}
+.hot .hot-bd ul li div h3{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	max-width: 160px;
+	text-overflow: ellipsis;
+	vertical-align: bottom;
+	
+}
+.hot .hot-bd ul li div span{
+	color: rgb(224,224,224);
+	margin: 0px 0.25em;
+	white-space: nowrap;
+}
+.hot .hot-bd .price{
+	display: inline;
+	color: rgb(255,103,0);
+}

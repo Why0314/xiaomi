@@ -1,17 +1,18 @@
 
 .main {
 	width: 1126px;
-	height: 5308px;
+	height: 3620px;
 	position: relative;
-	border: 1px solid black;
+	
 	margin: 0 auto;
 }
 
 .main .main-box {
 	height: 686px;
 	width: 1126px;
-	border: 1px solid red;
+	
 	position: relative;
+	margin-top: 28px;
 }
 .main .main-box .box-hd{
 	width: 1126px;
@@ -27,7 +28,7 @@
 .main .main-box .box-hd .more{
 	width: 280px;
 	height: 42.4px;
-	line-height: 42.4px;
+	line-height: 28px;
 	position: absolute;
 	display: block;
 	right: 0px;
@@ -35,13 +36,13 @@
 }
 .main .main-box .box-hd .more ul {
 	position: absolute;
-	right: 0px;
+	right: 10px;
 }
 .main .main-box .box-hd .more ul li{	
 	display: inline-block;
 	cursor: pointer;
 	list-style:none;
- 	margin: 9px 9px;
+ 	margin: 11px 7px;
 }
 .main .main-box .box-bd {
 	
@@ -49,7 +50,7 @@
 	width: 1126px;
 	position: absolute;
 	top: 58px;
-	border: 1px solid yellow;
+	
 }
 .main .main-box .box-bd .bdLeft{
 	width: 245px;
@@ -59,10 +60,16 @@
 }
 .main .main-box .box-bd .bdLeft ul li img{
 	width: 245px;
-	height: 614px;
+	height: 307px;
 }
-.main .main-box .box-bd  li:hover{
+
+.main .main-box .box-bd  .bdRight li:hover{
 	box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+	top: -1px;
+}
+.main .main-box .box-bd .bdLeft img:hover{
+	box-shadow:10px 15px 30px rgba(0,0,0,0.1);
+	
 	
 }
 .main .main-box .box-bd .bdRight{
@@ -78,6 +85,7 @@
 	width: 211px;
 	display: inline-block;
 	overflow:hidden;	
+	
 }
 
 .main .main-box .box-bd .bdRight ul li:nth-child(8){
@@ -197,9 +205,12 @@
 	font-size: 12px;
 	height: 85px;
 	text-align: center;
-	bottom: -85px;		
+	bottom: -85px;
+	transition:0.5s;		
 }
-
+.main .main-box .box-bd .bdRight ul li:hover .bot{
+	bottom: 0px;
+}
 .main .main-box .box-bd .bdRight ul li .bot a{
 	position: absolute;
 	top: 0px;
@@ -210,7 +221,7 @@
 .main .main-box .box-bd .bdRight ul li .bot .review{
 	display: inline-block;
 	color: #FFFFFF;
-	margin:18px 5px;
+	margin:11px 0px;
 	overflow: hidden;
 }
 .main .main-box .box-bd .bdRight ul li .bot .author{
@@ -218,4 +229,5 @@
 	white-space:nowrap;
 	display: inline-block;	
 	overflow: hidden;
+	margin:0px 0px;
 }
