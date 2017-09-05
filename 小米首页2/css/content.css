@@ -36,9 +36,17 @@
 	transition:all 0.2s linear;
 	color: #ffac13;
 	border-top:1px solid  #ffac13;
-
+	cursor: pointer;
 	overflow: hidden;
 }
+.content .con-bd .con-main:hover{
+	top: -2px;
+	box-shadow: 2px 2px 17px #aaaaaa;
+}
+.content .con-bd .con-main:hover > .con-tab{
+	display: block;
+}
+
 .content .con-bd .con-main:nth-child(2){
 	color: #83c44e;
 	border-top:1px solid  #83c44e;
@@ -122,14 +130,21 @@
 	margin-bottom: 15px;
 	cursor: pointer;
 	text-align: center;
+	color: #FFAC13;
+	padding-top: 3px;
 }
+
 .content .con-bd .con-main .con-con li div .con-more{
 	width: 120px;
 	height: 30px;
-	color: #FFAC13;
+	
 	font-size: 12px;
 	text-align: center;
 	
+}
+.content .con-bd .con-main .con-con li div:hover{
+	background: #ffac13;
+	color: #FFFFFF;
 }
 .content .con-bd .con-main .con-con li img{
 	height: 154px;
@@ -138,6 +153,9 @@
 	
 }
 
+.content .con-bd .con-main .con-tab{
+	display: none;
+}
 .content .con-bd .con-main .con-tab .conLeft{
 	position: absolute;
 	left: 0px;

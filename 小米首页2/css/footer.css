@@ -1,0 +1,103 @@
+.footer{
+	height: 272px;
+	width: 1126px;
+	position: relative;
+	margin: 0 auto;
+	top: 30px;
+}
+.footer .footer-service{
+	position: relative;
+	padding: 27px 0;
+	height: 33px;
+	width: 1126px;
+	border-bottom: 1px solid #E0E0E0;
+	
+}
+.footer .footer-service ul {
+	position: relative;
+	height: 33px;
+	width: 1126px;
+}
+.footer .footer-service ul li{
+	height: 33px;
+	position: relative;	
+	width: 19%;	
+	border-right: 1px solid #E0E0E0;
+	display:inline-block;
+}
+.footer .footer-service ul li img{
+	position: absolute;
+	margin: 0 auto;
+	height: 33px;
+	width: 33px;
+	left: 19px;
+}
+.footer .footer-service ul li p{
+	position: absolute;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+	top: 5px;
+	left: 55px;
+}
+.footer .footer-service ul li p:hover{
+	color: #FF6700;
+}
+.footer .footer-links{
+	padding: 10px 0;
+}
+.footer .footer-links dl{
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin-top: 33px;
+}
+.footer .footer-links dl dt{
+	margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+    cursor: pointer;
+}
+.footer .footer-links dl dd{
+	margin: 10px 0 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.footer .footer-links dl dd:hover{
+	color:#FF6709;
+}
+.footer .footer-links .tel{
+	position: absolute;
+	right: 0px;
+	top: 131px;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.footer .footer-links .tel .phone{
+	margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.footer .footer-links .tel .time{
+	margin: 0 0 16px;
+    font-size: 12px;
+}
+.footer .footer-links .tel a{
+	padding: 8px 16px ;
+    background: #fff;
+    color: #ff6700;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    border: 1px solid  #ff6700;
+    cursor: pointer;
+}
+.footer .footer-links .tel a:hover{
+	color: #FFFFFF;
+}

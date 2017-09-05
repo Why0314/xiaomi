@@ -1,0 +1,57 @@
+.info{
+	top: 80px;
+	position: relative;
+	width: 1126px;	
+    font-size: 12px;
+    background: #fafafa;
+    margin: 0 auto;
+    
+    height: 122px;
+ 
+}
+.info .logo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.info .info-text{
+	position: absolute;
+	left: 60px;
+	top: 0px;
+    
+}
+.info .info-text .xinxi{
+	color: #B0B0B0;
+	font-size: 12px;
+}
+
+.info .info-text .info-sites{
+	color: #333333;
+    line-height: 18px;
+}
+.info .info-links {
+	width: 377px;
+	height: 28px;
+	position: absolute;
+	right: -2px;
+	top: 0px;
+}
+.info .info-links a img{
+	margin-left: 7px;
+	height: 28px;
+	width:auto;
+	
+}
+
+.info .slogan{
+	font-size: 23px;
+	display: block;
+	position: absolute;
+    width:1126px;
+    height: 28px;
+    text-align: center;
+    bottom: 10px;
+    font-weight: 200;
+    color:#B0B0B0;
+    font-family: "华文行楷";
+}

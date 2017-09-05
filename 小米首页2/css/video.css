@@ -1,0 +1,80 @@
+.video{
+	width: 1126px;
+	height: 343px;
+	position: relative;
+	margin: 0 auto;
+}
+.video .v-hd{
+	height: 58px;
+	position: relative;
+	color: #333333;
+}
+.video .v-hd h2{
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+}
+.video .v-bd{
+	position: relative;
+	width: 1126px;
+	height: 258px;	
+}
+.video .v-bd ul li{
+	position: absolute;
+	width: 267px;
+	height: 285px;
+	background-color: white !important;
+	display:inline-block;
+	left: 0px;
+	cursor: pointer;
+}
+
+.video .v-bd ul li:nth-child(2){
+	left: 288px;
+}
+.video .v-bd ul li:nth-child(3){
+	left: 577px;
+}
+.video .v-bd ul li:nth-child(4){
+	left: 864px;
+}
+.video .v-bd ul li:hover{
+	top: -2px;
+	box-shadow: 2px 2px 17px #aaaaaa;
+}
+.video .v-bd ul li .v{
+	width: 267px;
+	height: 180px;
+}
+.video .v-bd ul li .play{
+	position: absolute;
+	left: 20px;
+	top: 142px;
+	width: 32px;
+	height: 20px;
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	border-radius: 12px;
+	text-align: center;
+}
+.video .v-bd ul li .play:hover{
+	color: #FFFFFF;
+	background: #ff6700;
+	border-color: #ff6700;
+}
+.video .v-bd ul li h3{
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	color: #333333;
+	margin: 27px 0 13px;
+}
+.video .v-bd ul li h3:hover{
+	color: #FF6600;
+}
+.video .v-bd ul li p{
+	text-align: center;
+	height: 18px;
+	font-size: 12px;
+	color: #B0B0B0;
+}
