@@ -65,7 +65,7 @@
 
 .main .main-box .box-bd  .bdRight li:hover{
 	box-shadow:0px 15px 30px rgba(0,0,0,0.1);
-	top: -1px;
+		
 }
 .main .main-box .box-bd .bdLeft img:hover{
 	box-shadow:10px 15px 30px rgba(0,0,0,0.1);
