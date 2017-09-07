@@ -36,12 +36,13 @@
 	right: 0px;
 	position: absolute;
 	width: 316px;
-	height: 92px;
+	height: 0px;
 	background: #fff;
-	display: none;
 	transition-duration: 3s;
 	box-shadow: 0px 0px 1px 0px;
-	transition: 3s;
+	transition: 0.5s;
+	z-index: 1;
+	overflow: hidden;
 }
 
 .site-topbar .center .car .car-show span {
@@ -49,6 +50,7 @@
 	top: 38px;
 	left: 74px;
 	color: #000;
+	
 }
 
 .site-topbar .center .car a {
@@ -85,7 +87,9 @@
 }
 
 .site-topbar .center .car:hover>.car-show {
-	z-index: 1;
+	
+	height: 92px;
+	box-shadow:0px 15px 30px rgba(0,0,0,0.1);
 	display: block;
 }
 
@@ -130,11 +134,106 @@
 	text-decoration: none;
 	color: #000;
 }
-
+.site-header .header-nav .nav-list .nav-item:hover > .wai{
+	border-top:1px solid #C4C4C4 ;
+	height: 227px;
+}
+.site-header .header-nav .nav-list .nav-item .wai{
+	height: 0px;
+	position: absolute;
+	z-index: 3;	
+	left: -320px;
+	right: -326px;
+	top: 99px;
+	overflow: hidden;
+    background: #FFFFFF !important;
+    transition: 0.5s;
+    box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+   
+}
+.site-header .header-nav .nav-list .nav-item .wai .nei{
+	height: 227px;
+	width: 1126px;
+	margin: 0 auto;
+	font-size: 12px;
+	position: relative;
+}
+.site-header .header-nav .nav-list .nav-item .wai .nei .bor{
+	display: inline-block;
+	height: 110px;
+	width: 1px;
+	border-right: 1px solid #AAAAAA;
+	position: absolute;
+	right: -3px;
+	top: 50px;
+	z-index: 5;
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li{
+    width: 162px;
+    height: 191px;
+    padding: 35px 12px 0;   
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: -6px;
+   
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li:nth-child(2){
+	left: 181px;
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li:nth-child(3){
+	left: 370px;
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li:nth-child(4){
+	left: 559px;
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li:nth-child(5){
+	left: 747px;
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li:nth-child(6){
+	left: 936px;
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li .cen{
+	width: 162px;
+    height: 191px; 
+    
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li .cen img{
+	width: 160px;
+	height: 110px;
+	
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li .cen .first{
+	border:0;
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li .cen .name{
+	color: #333333;
+	line-height: 20px;	
+	position: absolute;
+	top: 162px;
+	white-space: nowrap;	
+}
+.site-header .header-nav .nav-list .nav-item  .wai .nei li .cen .price{
+    line-height: 20px;
+    color: #ff6700;	
+	position: absolute;
+	top: 183px;
+	display: inline-block;
+   }
 .site-header .header-nav .nav-list li :hover {
 	color: #ff6600;
 }
-
+.site-header .header-nav .nav-list .nav-item  .wai .nei li .top{
+	color: #FF6709;
+	border: 1px solid #FF6600;
+	height: 20px;
+	display: table;
+	position: absolute;
+	top: 0px;
+	
+	line-height: 18px;
+	padding: 0px 18px;
+}
 .site-header .header-search {
 	width: 235px;
 	height: 50px;
